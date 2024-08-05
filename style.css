@@ -1,0 +1,102 @@
+.caja-titulo {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(245, 230, 202);
+
+}
+
+.titulo2 {
+    font-size: 9px;
+    letter-spacing: 9px;
+    text-align: center;
+    color: rgb(245, 230, 202);
+    
+
+}
+
+.punto {
+    color: rgb(212, 101, 10);
+    font-size: 80px;
+    display: inline;
+    text-align: center;
+    margin-top: 6px;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.fondo {
+    background-color: rgb(230, 161, 83);
+    /* background-image: url(https://image.slidesdocs.com/responsive-images/background/texture-rich-abstract-art-beige-brush-strokes-on-canvas-in-a-hand-drawn-oil-painting-powerpoint-background_f65f281b0e__960_540.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed; */
+}
+
+#contenedor {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-top: 50px;
+    
+
+}
+
+.caja-nosotros {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 700px;
+    
+}
+
+#carrito {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 13px rgb(80, 69, 69);
+    width: 210px;
+    height: 60px;
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px;
+    border: none;
+    background-color: rgb(214, 122, 122);
+    border-radius: 40px;
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+  
+}
+#botonCarrito {
+height: 60px;
+width: 150px;
+background-color: rgb(214, 122, 122);
+border-radius: 30px;
+border: none;
+
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+#textoCarrito {
+    background-color: white;
+    width: 60px;
+    text-align: center;
+    border-radius: 40px;
+    height: 60px;
+    font-size: 41px;
+    
+
+}
