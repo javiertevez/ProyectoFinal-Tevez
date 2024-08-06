@@ -30,28 +30,47 @@ for (const producto of productos) {
 contenedor.addEventListener('click', (event) => {
   if (event.target.classList.contains("btn-primary")) {
     validarProductoCarrito(event.target.id)
+
+
+//metodo para cambiar el numero de productos en el icono de abajo a la derecha
+const carritoEsquina = document.getElementById("textoCarrito");
+let cantidadProductosCarrito = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+carritoEsquina.innerText = parseInt(cantidadProductosCarrito);
+
+
+
+// se habilita la funcion para visualizar el carrito en el icono de abajo a la derecha
+   
+let textoCarrito = carrito.map(item => `<li>${item.cantidad}------${item.nombre}------$${item.precio}</li>`).join('\n');
+
+clickEnIconoCarrito(textoCarrito);
+
   };
 
 });
 
 //funcion para modificar la cantidad de cada producto
-let cantidadASumar = 0;
-const modificarCantidadCarrito = (cantidadASumar) => {
-  cantidadASumar++;
-  }
+
+// let cantidadASumar = 0;
+// const modificarCantidadCarrito = (cantidadASumar) => {
+//   cantidadASumar++;
+//   }
 
 // funcion para ver si el producto ya esta en el carrito o no
 
 const validarProductoCarrito = (productoId) => {
   const estaRepetido = carrito.some((producto) => producto.id == productoId);
   if (estaRepetido) {
-    const producto = carrito.find((producto) => producto.id == productoId);
+    const productoRepetido = productos.find((producto) => producto.id == productoId);
+    if (productoRepetido) {
+      const papa = carrito.find((producto) => producto == productoRepetido);
+      papa.cantidad++;
+    }
     
-    
-    // producto.cantidad++;
-    cantidadASumar = producto.cantidad;
+   
+    // cantidadASumar = producto.cantidad;
     // modificarCantidadCarrito(cantidadASumar);
-    // falta pintar el producto en el carrito
+    
 
 
     // si al clickear se trata de otro producto
@@ -66,7 +85,7 @@ const validarProductoCarrito = (productoId) => {
 
     // se habilita la funcion para visualizar el carrito en el icono de abajo a la derecha
    
-    const textoCarrito = carrito.map(item => `<li>${item.cantidad}------${item.nombre}------$${item.precio}</li>`).join('\n');
+    let textoCarrito = carrito.map(item => `<li>${item.cantidad}------${item.nombre}------$${item.precio}</li>`).join('\n');
 
     clickEnIconoCarrito(textoCarrito);
 
@@ -78,8 +97,8 @@ const validarProductoCarrito = (productoId) => {
 
     //metodo para cambiar el numero de productos en el icono de abajo a la derecha
     const carritoEsquina = document.getElementById("textoCarrito");
-    let cantidadProductosCarrito = carrito.length;
-    carritoEsquina.innerText = parseInt(cantidadProductosCarrito) +  parseInt(cantidadASumar);
+    let cantidadProductosCarrito = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+    carritoEsquina.innerText = parseInt(cantidadProductosCarrito);
   }
 }
 
@@ -99,11 +118,11 @@ const clickEnIconoCarrito = (textoCarrito) => {
 
 
     Swal.fire({
-      title: 'Mi carrito',
+      title: 'mi carrito',
       html: textoCarrito,
       confirmButtonText: 'Finalizar Compra',
-      confirmButtonColor: 'green',
-      cancelButtonColor: 'red',
+      confirmButtonColor: '#f1b571',
+      cancelButtonColor: '#f38508',
       showCancelButton: true,
       cancelButtonText: 'Volver atrás'
     }).then((result) => {
