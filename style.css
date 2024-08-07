@@ -100,3 +100,15 @@ font-weight: bold;
     
 
 }
+
+#boton-vaciar-carrito {
+    margin-left: 880px;
+    border-color: rgb(212, 161, 103);
+    background-color: rgb(212, 101, 10);
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
