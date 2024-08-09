@@ -62,12 +62,34 @@ background-attachment: fixed; */
     padding-bottom: 700px;
     
 }
+.nosotros {
+    text-align: center;
+}
+
+.caja-foto {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto-equipo {
+    width: 150px;
+    margin: auto;
+    border-radius: 100px;
+    
+    border: none;
+
+}
 
 #carrito {
     display: flex;
     flex-direction: row;
     box-shadow: 10px 10px 13px rgb(80, 69, 69);
     width: 210px;
+    margin-bottom: 20px;
+    margin-right: 30px;
     height: 60px;
     position: fixed; 
     bottom: 10px; 
@@ -75,6 +97,7 @@ background-attachment: fixed; */
     border: none;
     background-color: rgb(212, 101, 10);
     border-radius: 40px;
+    transition: transform 0.5s ease;
     &:hover {
         transform: scale(1.1, 1.1);
     }

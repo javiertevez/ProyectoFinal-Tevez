@@ -1,7 +1,41 @@
 
 
 
-const carrito = [];
+
+
+let carrito = [];
+
+let productos = [];
+
+
+
+
+
+// Cargar productos desde el archivo JSON
+fetch('productos.json')
+    .then(response => {
+        // Verificar si la respuesta es exitosa
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        // Convertir la respuesta a JSON
+        return response.json();
+    })
+    .then(data => {
+        // Almacenar los productos en la variable global
+        productos = data;
+
+        // Llamar a la función para renderizar las cartas de productos
+        renderizarProductos();
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+
+
+
+
 
 
 
@@ -9,9 +43,12 @@ const carrito = [];
 
 const contenedor = document.getElementById('contenedor');
 
-for (const producto of productos) {
+
+function renderizarProductos ()  {
+  for (const producto of productos) {
   contenedor.innerHTML +=
-    `    
+    ` 
+       
     <div class="card" style="width: 18rem; margin: 20px; border-radius: 30px; padding: 30px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column;">
         <img src= ${producto.imagen} class="card-img-top" alt="...">
         <div class="card-body">
@@ -24,6 +61,8 @@ for (const producto of productos) {
     `
 
 }
+}
+
 
 //metodo para cambiar el numero de productos en el icono de abajo a la derecha (en cero)
 const carritoEsquina = document.getElementById("textoCarrito");

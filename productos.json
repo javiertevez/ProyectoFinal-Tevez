@@ -1,0 +1,14 @@
+[
+  {"id": 1, "nombre": "Tríptico Atenas - 30x40c/u", "precio": 80000, "imagen": "https://http2.mlstatic.com/D_NQ_NP_725303-MLA46548077374_062021-O.webp", "cantidad": 1},
+  {"id": 2, "nombre": "Tríptico Orillas - 30x40c/u", "precio": 85000, "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hbTc3EP4IppjKulSmcQLFMlfY1DkRiF3KdWMtDO1EiLxzpCSvSoXQczJOYwp0lB4Ju0&usqp=CAU", "cantidad": 1},
+  {"id": 3, "nombre": "Amapolas rosas - 70x90", "precio": 140000, "imagen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/129363277_01/w=800,h=800,fit=pad", "cantidad": 1},
+  {"id": 4, "nombre": "Cuatro cuadros - Naturaleza - 40x30c/u", "precio": 100000, "imagen": "https://http2.mlstatic.com/D_NQ_NP_753564-MLA48389657582_112021-O.webp", "cantidad": 1},
+  {"id": 5, "nombre": "Flores blancas - 90x90", "precio": 150000, "imagen": "https://www.cuadros-modernos.com.ar/wp-content/uploads/Polish_20240101_222219678.jpg", "cantidad": 1},
+  {"id": 6, "nombre": "Tríptico - Plantas - 50x40c/u", "precio": 110000, "imagen": "https://acdn.mitiendanube.com/stores/001/184/368/products/plantas-terra-1-bf25d2eb79fcbfcc4e16630518228203-1024-1024.jpg", "cantidad": 1},
+  {"id": 7, "nombre": "Tríptico - Amanecer - 50x40c/u", "precio": 110000, "imagen": "https://http2.mlstatic.com/D_NQ_NP_974971-MLA70041352731_062023-O.webp", "cantidad": 1},
+  {"id": 8, "nombre": "Tierra - 60x40", "precio": 40000, "imagen": "https://abrillar.com/wp-content/uploads/2023/01/gjtfyjtt.jpg", "cantidad": 1},
+  {"id": 9, "nombre": "Círculos - 60x40", "precio": 40000, "imagen": "https://i.etsystatic.com/20040500/c/1875/1875/272/465/il/6c59e3/3658204561/il_300x300.3658204561_sscq.jpg", "cantidad": 1},
+  {"id": 10, "nombre": "Tríptico - Parque - 40x30c/u", "precio": 90000, "imagen": "https://http2.mlstatic.com/D_NQ_NP_713753-MLA72365016263_102023-O.webp", "cantidad": 1},
+  {"id": 11, "nombre": "Díptico - Misterios - 60x40c/u", "precio": 80000, "imagen": "https://acdn.mitiendanube.com/stores/446/460/products/11-f85bb87482fcbe0b9916137831104628-640-0.png", "cantidad": 1},
+  {"id": 12, "nombre": "Tríptico - Suavidad - 60x40c/u", "precio": 120000, "imagen": "https://http2.mlstatic.com/D_NQ_NP_601823-MLA71658095909_092023-O.webp", "cantidad": 1}
+]
