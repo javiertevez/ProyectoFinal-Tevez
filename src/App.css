@@ -12,21 +12,21 @@
 
 
 .banner {
-  width: 430px;
+  width: auto;
   height: 300px;
-  margin-left: 150px;
+ 
 
-  padding-top: 100px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 230px;
+  margin-bottom: 330px;
 
 }
 
 .main {
-  background-image: url('./assets/bannerAudiofiliaa.jpeg');
+  background-image: url('./assets/audiofilia.jpeg');
   background-size: cover;
-  height: 645px;
+  height: 670px;
 
 }
 
@@ -35,13 +35,28 @@
   font-family: 'audiofilia';
   color: rgb(240, 188, 17);
   font-size: 60px;
-  text-shadow: 10px 4px 10px rgb(31, 31, 31);
+  text-shadow: 10px 4px 10px rgb(0, 0, 0);
+  animation: flotar 3s ease-in-out infinite;
+  margin-top:30px ;
+  text-align: center;
+}
+
+@keyframes flotar {
+  0% {
+      transform: translateY(0); 
+  }
+  50% {
+      transform: translateY(-15px); 
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
 
 .subtitulo {
-  text-align: right;
-  color: white;
-  font-size: 30px;
+  text-align: center;
+  color: rgb(150, 150, 150);
+  font-size: 20px;
   font-family: sans-serif;
   text-shadow: 10px 4px 10px rgb(31, 31, 31);
 }

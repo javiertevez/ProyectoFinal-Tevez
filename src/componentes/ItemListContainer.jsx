@@ -29,7 +29,8 @@ function ItemListContainer({ section }) {
           (sectionIsEmpty ?
             products :
             products.filter(filterBySection)).map(
-              product => <CardComponent key={product.id} product={product} link={product.name} />
+              product => <CardComponent key={product.id} product={product}
+                section={product.section} productName={product.name} />
             )
 
 

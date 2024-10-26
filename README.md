@@ -1,8 +1,21 @@
-# React + Vite
+AUDIOFILIA
+---
+Este es un proyecto de ecommerce en React JS utilizando Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características:
 
-Currently, two official plugins are available:
+Carrito de compras con todas las funcionalidades correspondientes.
+Productos dinámicamente obtenidos de una base de datos en firebase.
+Checkout con envío de orden de compra a la base de datos de firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+Instalación Local:
+
+1. Clonar el repositorio o descargarlo.
+2. Abrir una terminal dentro del directorio del proyecto.
+3. Ejecutar el comando npm install.
+4. Ejecutar el comando npm run dev.
+5. Entrar al link del localhost provisto en la consola.
+
+Desarrollado por Javier Alejandro Tevez

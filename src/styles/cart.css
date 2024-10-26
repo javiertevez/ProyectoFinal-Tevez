@@ -1,18 +1,137 @@
+.cart-view {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(39, 39, 39);
+    background-image: url('../assets/audiofilia.jpeg');
+    background-size: cover;
+    height: 670px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .caja-carrito {
     display: flex;
     flex-direction: row;
     margin-left: 600px;
 }
+
 .carrito {
     width: 42px;
     height: 42px;
     border-radius: 50px;
 }
-.numero-carrito {                                                                                                           
+
+.numero-carrito {
     color: white;
     font-size: 31px;
     font-family: sans-serif;
     margin-left: 20px;
     margin-top: 3px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    margin: 7px;
+    width: 600px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    justify-content: center;
+    
+    
+}
+
+.text-row {
+    margin: 15px;
+    margin-right: 30px;
+    font-family: sans-serif;
+    
+}
+
+.cart-title {
+    font-family: 'audiofilia';
+    color: rgb(240, 188, 17);
+    font-size: 40px;
+    text-shadow: 10px 4px 10px rgb(0, 0, 0);
+    animation: flotar 3s ease-in-out infinite;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.button-finish {
+    background-color: rgb(156, 156, 156);
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 200px;
+    height: 50px;
+    padding: 6px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: all 300ms;
+    &:hover {
+          background-color: rgb(240, 188, 17);
+          color: black;
+  
+      }
+}
+.button-clear {
+    background-color: rgb(156, 156, 156);
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 130px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 300ms;
+    &:hover {
+          background-color: rgb(240, 188, 17);
+          color: black;
+  
+      }
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 30px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.tp {
+    background-color: rgb(240, 188, 17);
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+
+}
+.end {
+    font-size: 30px;
+    color: rgb(240, 188, 17);;
+    text-shadow: 10px 4px 10px rgb(0, 0, 0);
+    animation: flotar 3s ease-in-out infinite;
+    margin: 40px;
 }

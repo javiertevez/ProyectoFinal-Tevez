@@ -1,4 +1,6 @@
 
+
+
 .product-detail-box {
     display: flex;
     flex-direction: row;
@@ -29,4 +31,45 @@ p {
     background-color: rgb(39, 39, 39);
     height: 800px;
     padding-top: 40px;
+}
+
+.caja-agregar-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boton-agregar {
+    background-color: rgb(156, 156, 156);
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: all 300ms;
+    &:hover {
+          background-color: rgb(240, 188, 17);
+          color: black;
+  
+      }
+}
+.carrito-cantidad {
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+.text-section {
+    width: 400px;
+}
+.price {
+    font-weight: bold;
+    font-size: 26px;
 }
